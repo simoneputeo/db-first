@@ -10,8 +10,8 @@
 | color               | VARCHAR(40)                            |                          |             |
 | optionals           | TEXT                                   |                          |             |
 | engine              | VARCHAR(30)                            |                          |             |
-| engine_displacement | INT(6,2)                               |                          |             |
-| engine_power        | INT(5,2)                               |                          |             |
+| engine_displacement | FLOAT (6,2)                            |                          |             |
+| engine_power        | FLOAT (5,2)                            |                          |             |
 | power_supply        | ENUM("DIESEL", "FUEL", "HYBRID", "EV") | NOT NULL                 |             |
 | power_supply_extra  | ENUM("LPG", "METHANE", "HYDROGEN")     | NOT NULL                 |             |
 | model_year          | YEAR                                   | NOT NULL                 | INDEX       |
