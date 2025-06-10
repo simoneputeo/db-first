@@ -10,9 +10,12 @@
 | color               | VARCHAR(40)                            |                          |             |
 | optionals           | TEXT                                   |                          |             |
 | engine              | VARCHAR(30)                            |                          |             |
-| engine_displacement | INT(4,2)                               |                          |             |
-| engine_power        | INT(3,2)                               |                          |             |
+| engine_displacement | INT(6,2)                               |                          |             |
+| engine_power        | INT(5,2)                               |                          |             |
 | power_supply        | ENUM("DIESEL", "FUEL", "HYBRID", "EV") | NOT NULL                 |             |
 | power_supply_extra  | ENUM("LPG", "METHANE", "HYDROGEN")     | NOT NULL                 |             |
 | model_year          | YEAR                                   | NOT NULL                 | INDEX       |
 | available           | ENUM("SHOWROOM", "GARAGE", "COMING")   | NOT NULL                 |             |
+| nationality         | VARCHAR(40)                            | NOT NULL                 |             |
+| license_plate       | VARCHAR(10)                            | NOT NULL                 | INDEX       |
+| vin_code            | VARCHAR(40)                            | NOT NULL, UNIQUE         | INDEX       |
