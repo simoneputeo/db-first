@@ -4,7 +4,7 @@
 | brand               | VARCHAR(30)                            | NOT NULL                 | INDEX       |
 | model               | VARCHAR(50)                            | NOT NULL                 | INDEX       |
 | package             | VARCHAR(50)                            |                          | INDEX       |
-| km                  | INT                                    | NOT NULL                 |             |
+| km                  | FLOAT (7,1)                            | NOT NULL                 |             |
 | state               | ENUM( "OK", "GOOD", "PERFECT", "KM0")  | NOT NULL                 |             |
 | price               | INT                                    | NOT NULL                 |             |
 | color               | VARCHAR(40)                            |                          |             |
